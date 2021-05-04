@@ -15,7 +15,7 @@ html, body {
     }
 }
 // Sections
-section {
+section, main {
     @media screen and (min-width: 1400px) {
         padding: 5rem 17vw;
     }
@@ -95,7 +95,7 @@ section {
     font-weight: 500;
 }
 h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 2.375rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 1.2;
@@ -328,6 +328,54 @@ p, .p {
 }
 
 //SPECIFIC STYLES
+main {
+    position: relative;
+    background-image: url(images/background.jpg);
+    background-position: 50vw 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #181c1c;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 12%;
+        left: 0;
+        width: 100%;
+        height: 74%;
+        background-image: url(images/background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain
+    }
+    h1 {
+        position: relative;
+        margin-top: 1.625rem;
+        &:after {
+            position: absolute;
+            content: '';
+            top: -3.5rem;
+            left: 0;
+            width: 3rem;
+            height: 3rem;
+            background-image: url(images/shield.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+        }
+    }
+    .card {
+        flex: 1;
+        max-width: 48%;
+        padding: 1rem 1.25rem;
+        p, h6 {
+            margin-bottom: .25rem;
+        }
+        &.border-white {
+            border: 1px solid #fff;
+            background-color: #181c1c;
+        }
+    }
+}
 #wsywg {
     font-weight: 500;
     .card {

@@ -9,25 +9,25 @@ html, body {
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   html, body {
     font-size: 13px; } }
-section {
+section, main {
   padding: 5rem 5rem;
   position: relative; }
   @media screen and (min-width: 1400px) {
-    section {
+    section, main {
       padding: 5rem 17vw; } }
-  section.relaxed {
+  section.relaxed, main.relaxed {
     padding: 5rem 4rem; }
     @media screen and (min-width: 1400px) {
-      section.relaxed {
+      section.relaxed, main.relaxed {
         padding: 5rem 13vw; } }
-  section.tight {
+  section.tight, main.tight {
     padding: 5rem 7rem; }
     @media screen and (min-width: 1400px) {
-      section.tight {
+      section.tight, main.tight {
         padding: 5rem 21vw; } }
-  section.white-section {
+  section.white-section, main.white-section {
     background-color: #FFFFFF; }
-    section.white-section-grey::after {
+    section.white-section-grey::after, main.white-section-grey::after {
       content: '';
       display: block;
       position: absolute;
@@ -37,9 +37,9 @@ section {
       width: 100%;
       height: 60%;
       background-color: #F4F4F4; }
-  section.grey-section {
+  section.grey-section, main.grey-section {
     background-color: #F4F4F4; }
-  section.black-section {
+  section.black-section, main.black-section {
     background-color: #212121; }
 
 .text-red {
@@ -67,7 +67,7 @@ section {
   font-weight: 500; }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2.375rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   line-height: 1.2; }
@@ -233,6 +233,48 @@ p, .p {
   .btn-red {
     background-color: #D52027;
     color: white; }
+
+main {
+  position: relative;
+  background-image: url(images/background.jpg);
+  background-position: 50vw 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #181c1c; }
+  main::after {
+    position: absolute;
+    content: '';
+    top: 12%;
+    left: 0;
+    width: 100%;
+    height: 74%;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  main h1 {
+    position: relative;
+    margin-top: 1.625rem; }
+    main h1:after {
+      position: absolute;
+      content: '';
+      top: -3.5rem;
+      left: 0;
+      width: 3rem;
+      height: 3rem;
+      background-image: url(images/shield.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain; }
+  main .card {
+    flex: 1;
+    max-width: 48%;
+    padding: 1rem 1.25rem; }
+    main .card p, main .card h6 {
+      margin-bottom: .25rem; }
+    main .card.border-white {
+      border: 1px solid #fff;
+      background-color: #181c1c; }
 
 #wsywg {
   font-weight: 500; }
