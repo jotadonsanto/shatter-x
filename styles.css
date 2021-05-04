@@ -3,31 +3,37 @@ html, body {
   font-family: "Inter", sans-serif !important;
   font-weight: 400; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    color: inherit; }
+
 @media screen and (min-width: 1400px) {
   html, body {
     font-size: 16px; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   html, body {
     font-size: 13px; } }
-section, main {
+section, .section, main {
   padding: 5rem 5rem;
   position: relative; }
   @media screen and (min-width: 1400px) {
-    section, main {
+    section, .section, main {
       padding: 5rem 17vw; } }
-  section.relaxed, main.relaxed {
+  section.relaxed, .section.relaxed, main.relaxed {
     padding: 5rem 4rem; }
     @media screen and (min-width: 1400px) {
-      section.relaxed, main.relaxed {
+      section.relaxed, .section.relaxed, main.relaxed {
         padding: 5rem 13vw; } }
-  section.tight, main.tight {
+  section.tight, .section.tight, main.tight {
     padding: 5rem 7rem; }
     @media screen and (min-width: 1400px) {
-      section.tight, main.tight {
+      section.tight, .section.tight, main.tight {
         padding: 5rem 21vw; } }
-  section.white-section, main.white-section {
+  section.white-section, .section.white-section, main.white-section {
     background-color: #FFFFFF; }
-    section.white-section-grey::after, main.white-section-grey::after {
+    section.white-section-grey::after, .section.white-section-grey::after, main.white-section-grey::after {
       content: '';
       display: block;
       position: absolute;
@@ -37,9 +43,9 @@ section, main {
       width: 100%;
       height: 60%;
       background-color: #F4F4F4; }
-  section.grey-section, main.grey-section {
+  section.grey-section, .section.grey-section, main.grey-section {
     background-color: #F4F4F4; }
-  section.black-section, main.black-section {
+  section.black-section, .section.black-section, main.black-section {
     background-color: #212121; }
 
 .text-red {

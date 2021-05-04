@@ -1,8 +1,16 @@
 // SHATTER X - Create and overwrite Bootstrap styles
+//Reboot
 html, body {
     color: #333333;
     font-family: 'Inter', sans-serif!important;
     font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
 }
 @media screen and (min-width: 1400px) {
     html, body {
@@ -15,7 +23,7 @@ html, body {
     }
 }
 // Sections
-section, main {
+section, .section, main {
     @media screen and (min-width: 1400px) {
         padding: 5rem 17vw;
     }
