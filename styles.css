@@ -9,26 +9,26 @@ a {
   a:hover {
     color: inherit; }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1464px) {
   html, body {
     font-size: 16px; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 1024px) and (max-width: 1463px) {
   html, body {
     font-size: 13px; } }
 section, .section, main {
   padding: 5rem 5rem;
   position: relative; }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1464px) {
     section, .section, main {
       padding: 5rem 17vw; } }
   section.relaxed, .section.relaxed, main.relaxed {
     padding: 5rem 4rem; }
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1464px) {
       section.relaxed, .section.relaxed, main.relaxed {
         padding: 5rem 13vw; } }
   section.tight, .section.tight, main.tight {
     padding: 5rem 7rem; }
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1464px) {
       section.tight, .section.tight, main.tight {
         padding: 5rem 21vw; } }
   section.white-section, .section.white-section, main.white-section {
@@ -247,7 +247,7 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #181c1c; }
-  main::after {
+  main::before {
     position: absolute;
     content: '';
     top: 12%;

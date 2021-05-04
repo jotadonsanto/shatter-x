@@ -12,33 +12,33 @@ a {
         color: inherit;
     }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1464px) {
     html, body {
         font-size: 16px;
     }
 }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 1024px) and (max-width: 1463px) {
     html, body {
         font-size: 13px;
     }
 }
 // Sections
 section, .section, main {
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1464px) {
         padding: 5rem 17vw;
     }
     padding: 5rem 5rem;
     position: relative;
     &.relaxed {
         // Menos padding
-        @media screen and (min-width: 1400px) {
+        @media screen and (min-width: 1464px) {
             padding: 5rem 13vw;
         }
         padding: 5rem 4rem;
     }
     &.tight {
         // Mas padding
-        @media screen and (min-width: 1400px) {
+        @media screen and (min-width: 1464px) {
             padding: 5rem 21vw;
         }
         padding: 5rem 7rem;
@@ -343,7 +343,7 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #181c1c;
-    &::after {
+    &::before {
         position: absolute;
         content: '';
         top: 12%;
