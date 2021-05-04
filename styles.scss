@@ -27,21 +27,21 @@ section, .section, main {
     @media screen and (min-width: 1464px) {
         padding: 5rem 17vw;
     }
-    padding: 5rem 5rem;
+    padding: 5rem 12vw;
     position: relative;
     &.relaxed {
         // Menos padding
         @media screen and (min-width: 1464px) {
             padding: 5rem 13vw;
         }
-        padding: 5rem 4rem;
+        padding: 5rem 10vw;
     }
     &.tight {
         // Mas padding
         @media screen and (min-width: 1464px) {
             padding: 5rem 21vw;
         }
-        padding: 5rem 7rem;
+        padding: 5rem 13vw;
     }
     &.white-section {
         background-color: #FFFFFF;

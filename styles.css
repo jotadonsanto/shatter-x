@@ -16,18 +16,18 @@ a {
   html, body {
     font-size: 13px; } }
 section, .section, main {
-  padding: 5rem 5rem;
+  padding: 5rem 12vw;
   position: relative; }
   @media screen and (min-width: 1464px) {
     section, .section, main {
       padding: 5rem 17vw; } }
   section.relaxed, .section.relaxed, main.relaxed {
-    padding: 5rem 4rem; }
+    padding: 5rem 10vw; }
     @media screen and (min-width: 1464px) {
       section.relaxed, .section.relaxed, main.relaxed {
         padding: 5rem 13vw; } }
   section.tight, .section.tight, main.tight {
-    padding: 5rem 7rem; }
+    padding: 5rem 13vw; }
     @media screen and (min-width: 1464px) {
       section.tight, .section.tight, main.tight {
         padding: 5rem 21vw; } }
