@@ -17,7 +17,7 @@ a {
         font-size: 16px;
     }
 }
-@media screen and (min-width: 1024px) and (max-width: 1463px) {
+@media screen and (min-width: 992px) and (max-width: 1463px) {
     html, body {
         font-size: 13px;
     }
@@ -183,12 +183,22 @@ p, .p {
     }
     &.main-review {
         background-color: #F7F7F7;
+        box-shadow: 4px 4px 4px rgba(109, 109, 109, 0.24);
         button {
             background-color: transparent;
             border: none;
             text-align: left;
             padding: 0;
             font-weight: bold;
+        }
+        .stars {
+            background-image: url(images/stars.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 2.5rem;
+            width: 100%;
+            display: block;
+            margin-bottom: 1rem;
         }
     }
 }
@@ -286,15 +296,26 @@ p, .p {
             background-color: #D52127;
             border-radius: 0 0 0.625rem 0.625rem;
         }
+        &.xl::after {
+            height: .6rem;
+        }
         &.single-review {
             width: 45%;
             float: left;
+            &:first-child, &:nth-child(2) {
+                margin-bottom: 3rem;
+            }
             &:first-child, &:nth-child(3) {
                 margin-right: 10%;
             }
             .data {
-                >div {
-
+                .stars {
+                    background-image: url(images/stars.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 6rem;
+                    display: block;
+                    height: 20px;
                 }
             }
         }
@@ -382,6 +403,32 @@ main {
             border: 1px solid #fff;
             background-color: #181c1c;
         }
+    }
+}
+footer {
+    background-color: #000000;
+    button {
+        &.scroll-top {
+            position: absolute;
+            width: 75%;
+            left: 12.5%;
+            top: -1.5rem;
+            height: 3rem;
+            border: none;
+            border-radius: .75rem;
+        }
+    }
+    a {
+        display: block;
+    }
+    .payments {
+        background-image: url(images/payments.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 3.125rem;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 1.75rem;
     }
 }
 #wsywg {
