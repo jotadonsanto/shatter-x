@@ -16,7 +16,7 @@
   <body>
     <!-- Header -->
     <header>
-        <div class="row m-0">
+        <div class="d-none d-lg-block row m-0">
             <div class="d-none d-lg-block section pe-0 bg-red col-9 py-3">
                 <h5 class="text-white mb-0"><strong>Free Shipping</strong></h5>
             </div>
@@ -36,34 +36,59 @@
                 </div>
             </div>
         </div>
+        <nav class="navbar bg-white py-1">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/shatter-x.svg" alt="Shatter-X"></a>
+                <span>
+                    <button class="navbar-toggler" type="button">
+                        <span class="navbar-toggler-icon profile"></span>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </span>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <div class="d-flex flex-column">
+                        <a href="" class="p ms-3">INSTALLATION</a>
+                        <a href="" class="p ms-3">FLEET PROTECTION</a>
+                        <a href="" class="p ms-3">ABOUT US</a>
+                        <a href="" class="p ms-3">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- Header -->
     <!-- Cover -->
     <main>
         <div class="row">
             <div class="col col-xl-4">
-                <h1 class="text-red"><strong><span class="text-white">Get Peace of Mind</span><br>Prevent Windshield<br>Cracks & Chips</strong></h1>
-                <h6 class="text-white my-3"><span class="text-red">ShatterX</span> high-performance windshield coating uses nanotechnology to prevent cracks, repel rain, frost and snow.</h6>
-                <div class="d-flex justify-content-between d-flex flex-row justify-content-between">
-                    <div class="card bg-red d-flex flex-row justify-content-between">
-                        <p class="text-white"><strong>Buy one</strong></p>
-                        <h6 class="text-white"><strong>$34.99</strong></h6>
+                <span>
+                    <h1 class="text-red text-center text-md-start"><strong><span class="text-white">Get Peace of Mind</span><br>Prevent Windshield<br>Cracks & Chips</strong></h1>
+                    <h6 class="text-white text-center text-md-start my-3"><span class="text-red">ShatterX</span> high-performance windshield coating uses nanotechnology to prevent cracks, repel rain, frost and snow.</h6>
+                </span>
+                <span>
+                    <div class="d-flex flex-column flex-md-row justify-content-between d-flex flex-row justify-content-between">
+                        <div class="card bg-red d-flex flex-row justify-content-between mb-3 mb-md-0">
+                            <p class="text-white"><strong>Buy one<span class="d-md-none"> now</span></strong></p>
+                            <h6 class="text-white"><strong>$34.99</strong></h6>
+                        </div>
+                        <div class="card border-white d-flex flex-row justify-content-between mb-3 mb-md-0">
+                            <p class="text-white">Or buy three,<br><strong>get 1 free.</strong></p>
+                            <h6 class="text-white"><strong>$26</strong><br><span class="p"></span></h6>
+                        </div>
                     </div>
-                    <div class="card border-white d-flex flex-row justify-content-between">
-                        <p class="text-white">Or buy three,<br><strong>get 1 free.</strong></p>
-                        <h6 class="text-white"><strong>$26</strong><br><span class="p"></span></h6>
+                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-md-start mt-4">
+                        <span class="mr-4 d-flex flex-row align-items-center">
+                            <img src="images/guarantee.svg" class="me-3" alt="100% Money Back Guarantee">
+                            <p class="text-white m-0"><strong>100% Money<br>Back Guarantee</strong></p>
+                        </span>
+                        <span class="d-flex flex-row align-items-center ms-4">
+                            <img src="images/shipping.svg" class="me-3" alt="100% Money Back Guarantee">
+                            <p class="text-white m-0"><strong>Free Same<br>Day Shipping</strong></p>
+                        </span>
                     </div>
-                </div>
-                <div class="d-flex flex-row align-items-center mt-4">
-                    <span class="mr-4 d-flex flex-row align-items-center">
-                        <img src="images/guarantee.svg" class="me-3" alt="100% Money Back Guarantee">
-                        <p class="text-white m-0"><strong>100% Money<br>Back Guarantee</strong></p>
-                    </span>
-                    <span class="d-flex flex-row align-items-center ms-4">
-                        <img src="images/shipping.svg" class="me-3" alt="100% Money Back Guarantee">
-                        <p class="text-white m-0"><strong>Free Same<br>Day Shipping</strong></p>
-                    </span>
-                </div>
+                </span>
             </div>
         </div>
     </main>
@@ -109,7 +134,7 @@
         <div class="row">
             <div class="col">
                 <h2 class="text-red text-center">Keep You and Your Family Protected<br><span class="text-white">From the Risks of a Damaged Windshield.</span></h2>
-                <div class="row">
+                <div class="row d-none d-md-block">
                     <div class="col col-5ths mb-3">
                         <div class="d-flex justify-content-between h-100 card card-black text-center px-2 py-4">
                             <img src="images/chips.svg" alt="">
@@ -190,10 +215,12 @@
                                         <img src="images/cleaner_wipe.png" alt="2X Cleaner Wipes" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="col-12 py-3 px-5">
-                                    <h3 class="lg mt-4 mb-2">2X Cleaner Wipes</h3>
-                                    <h5 class="lg">(6"x8")</h5>
-                                    <h5 class="lg mb-3"><span class="text-red">Infused with a cleaner agent</span> to ensure<br>nothing gets in the way of the coating.</h5>
+                                <div class="col-12">
+                                    <div class="bg-black bg-md-white py-3 px-5 text-white text-md-black">
+                                        <h3 class="lg mt-4 mb-2">2X Cleaner Wipes</h3>
+                                        <h5 class="lg">(6"x8")</h5>
+                                        <h5 class="lg mb-3"><span class="text-md-red">Infused with a cleaner agent</span> to ensure<br>nothing gets in the way of the coating.</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -206,10 +233,12 @@
                                         <img src="images/coating_wipe.png" alt="2X Nano Coating Wipes" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="col-12 py-3 px-5">
-                                    <h3 class="lg mt-4 mb-2">2X Nano Coating Wipes</h3>
-                                    <h5 class="lg">(6"x8")</h5>
-                                    <h5 class="lg mb-3"><span class="text-red">Infused wet with is our non-toxic silica-based<br>coating</span> to protect your windshield.</h5>
+                                <div class="col-12">
+                                    <div class="bg-black bg-md-white py-3 px-5 text-white text-md-black">
+                                        <h3 class="lg mt-4 mb-2">2X Nano Coating Wipes</h3>
+                                        <h5 class="lg">(6"x8")</h5>
+                                        <h5 class="lg mb-3"><span class="text-md-red">Infused wet with is our non-toxic silica-based<br>coating</span> to protect your windshield.</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +250,7 @@
 
     <!-- shatterX stops damage -->
     <section class="white-section-grey" id="stops">
-        <div class="row">
+        <div class="row mobile-no-padded">
             <div class="col">
                 <div class="unprotected">
 
@@ -244,7 +273,7 @@
 
     <!-- shatterX enhances visibility -->
     <section class="white-section-grey" id="enhances">
-        <div class="row vertical-divider-red">
+        <div class="row vertical-divider-red mobile-no-padded">
             <div class="col unprotected">
             </div>
             <div class="col protected">
@@ -315,29 +344,33 @@
             <div class="col-12">
                 <h2>Behind the Tech</h2>
             </div>
-            <div class="row mb-5">
-                <div class="col bg-white uncoated">
-                    <div class="bg-white text-center p-2">
-                        <h4>Uncoated</h4>
-                        <h5>Under microscope Zoomed 100,000%</h5>
+            <div class="col-12">
+                <div class="row mb-5 mobile-no-padded">
+                    <div class="col bg-white uncoated">
+                        <div class="bg-white text-center p-2">
+                            <h4>Uncoated</h4>
+                            <h5>Under microscope Zoomed 100,000%</h5>
+                        </div>
                     </div>
-                </div>
-                <div class="col bg-white coated">
-                    <div class="bg-white text-center p-2">
-                        <h4 class="text-red">Coated</h4>
-                        <h5>Under microscope Zoomed 100,000%</h5>
+                    <div class="col bg-white coated">
+                        <div class="bg-white text-center p-2">
+                            <h4 class="text-red">Coated</h4>
+                            <h5>Under microscope Zoomed 100,000%</h5>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 text-center">
-              <div class="col">
-                  <h4 class="mb-2">Before ShatterX Is Applied.</h4>
-                  <h4 class="font-weight-regular">Glass surfaces aren’t as smooth as they seem. Under a microscope, they are full of valleys and ridges that become points of weakness.</h4>
-              </div>
-              <div class="col">
-                  <h4 class="mb-2">Before ShatterX Is Applied.</h4>
-                  <h4 class="font-weight-regular">Glass surfaces aren’t as smooth as they seem. Under a microscope, they are full of valleys and ridges that become points of weakness.</h4>
-              </div>
+            <div class="col-12">
+                <div class="row mt-5 text-center">
+                  <div class="col">
+                      <h4 class="mb-2">Before ShatterX Is Applied.</h4>
+                      <h4 class="font-weight-regular">Glass surfaces aren’t as smooth as they seem. Under a microscope, they are full of valleys and ridges that become points of weakness.</h4>
+                  </div>
+                  <div class="col">
+                      <h4 class="mb-2">Before ShatterX Is Applied.</h4>
+                      <h4 class="font-weight-regular">Glass surfaces aren’t as smooth as they seem. Under a microscope, they are full of valleys and ridges that become points of weakness.</h4>
+                  </div>
+                </div>
             </div>
         </div>
     </section>
@@ -345,8 +378,8 @@
     <!-- whats in.. -->
     <section class="white-section" id="whatsin">
         <div class="row mb-5">
-            <div class="col-6 whatsin"></div>
-            <div class="col-6 pl-5">
+            <div class="col-12 col-md-6 whatsin"></div>
+            <div class="col-12 col-md-6 pl-5">
                 <h2>What’s In The Shatter X<br>Nano-Coating Wipe?</h2>
                 <h4>ShatterX is made with a natural compound known as silicon dioxide or silica. <span class="font-weight-regular">It is made up of two of the earth’s most commonly found materials – silicon and oxygen.<br><br>Silica comes in several forms and its highly unique properties allow ShatterX to use it for its nanoparticle size, as well as its gelling and thickening properties that make your windshield durable and resistant to debris and precipitation.</span></h4>
             </div>
@@ -420,7 +453,7 @@
             <div class="col-12">
                 <h2><span class="text-red">Reviews</span> From Our Customers</h2>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="card main-review p-5 h-100 justify-content-between">
                     <div>
                         <h4 class="h1 xl m-0"><strong>5.0</strong></h4>
@@ -430,7 +463,7 @@
                     <button class="h6 text-red"><u>View all customer reviews</u></button>
                 </div>
             </div>
-            <div class="col-7 offset-1">
+            <div class="col-12 col-md-7 offset-md-1">
                 <div class="bb-red single-review pt-1">
                     <div class="data d-flex flex-row justify-content-between">
                         <div class="d-flex flex-row">
@@ -565,16 +598,16 @@
 
     <section class="white-section pt-0">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
                 <div class="card bg-red p-5 d-flex align-items-center h-100 d-flex justify-content-center">
                     <h5 class="lg text-white font-weight-medium mb-3">ShatterX is Easy to Apply</h5>
                     <p class="text-white mb-3 text-center">Wondering how to install it on your windshield? </p>
                     <button class="btn btn-white">See Instructions</button>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="card bg-grey p-5 d-flex align-items-center h-100 d-flex justify-content-center">
-                    <h5 class="lg font-weight-medium mb-3">ShatterX is Easy to Apply</h5>
+                    <h5 class="lg font-weight-medium mb-3">Protect Your Fleet</h5>
                     <p class="text-grey mb-3 text-center"><strong>Are you looking for a high-performance solution for your fleet?</strong><br>Learn more about what ShatterX can do for your city, public school system, public transit, and first responders. </p>
                     <button class="btn btn-red">Learn More</button>
                 </div>

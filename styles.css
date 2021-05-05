@@ -12,7 +12,7 @@ a {
 @media screen and (min-width: 1464px) {
   html, body {
     font-size: 16px; } }
-@media screen and (min-width: 992px) and (max-width: 1463px) {
+@media screen and (max-width: 1463px) {
   html, body {
     font-size: 13px; } }
 section, .section, main {
@@ -21,28 +21,50 @@ section, .section, main {
   @media screen and (min-width: 1464px) {
     section, .section, main {
       padding: 5rem 17vw; } }
+  @media screen and (max-width: 768px) {
+    section, .section, main {
+      padding: 3.25rem 7vw; }
+      section .mobile-no-padded, .section .mobile-no-padded, main .mobile-no-padded {
+        width: 100vw;
+        margin-left: -7vw;
+        --bs-gutter-x: 0; } }
   section.relaxed, .section.relaxed, main.relaxed {
     padding: 5rem 10vw; }
     @media screen and (min-width: 1464px) {
       section.relaxed, .section.relaxed, main.relaxed {
         padding: 5rem 13vw; } }
+    @media screen and (max-width: 768px) {
+      section.relaxed, .section.relaxed, main.relaxed {
+        padding: 3.25rem 3vw; }
+        section.relaxed .mobile-no-padded, .section.relaxed .mobile-no-padded, main.relaxed .mobile-no-padded {
+          width: 100vw;
+          margin-left: -7vw;
+          --bs-gutter-x: 0; } }
   section.tight, .section.tight, main.tight {
     padding: 5rem 13vw; }
     @media screen and (min-width: 1464px) {
       section.tight, .section.tight, main.tight {
         padding: 5rem 21vw; } }
+    @media screen and (max-width: 768px) {
+      section.tight, .section.tight, main.tight {
+        padding: 3.25rem 9vw; }
+        section.tight .mobile-no-padded, .section.tight .mobile-no-padded, main.tight .mobile-no-padded {
+          width: 100vw;
+          margin-left: -7vw;
+          --bs-gutter-x: 0; } }
   section.white-section, .section.white-section, main.white-section {
     background-color: #FFFFFF; }
-    section.white-section-grey::after, .section.white-section-grey::after, main.white-section-grey::after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      z-index: -1;
-      width: 100%;
-      height: 60%;
-      background-color: #F4F4F4; }
+    @media screen and (min-width: 768px) {
+      section.white-section-grey::after, .section.white-section-grey::after, main.white-section-grey::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 60%;
+        background-color: #F4F4F4; } }
   section.grey-section, .section.grey-section, main.grey-section {
     background-color: #F4F4F4; }
   section.black-section, .section.black-section, main.black-section {
@@ -185,6 +207,21 @@ p, .p {
     background-image: url(images/failed.svg); }
 .table.table-striped > tbody > tr:nth-of-type(odd) {
   --bs-table-accent-bg: rgba(0, 0, 0, 0.02); }
+@media screen and (max-width: 767px) {
+  .table.table-striped {
+    max-width: 100%;
+    overflow-y: scroll; }
+    .table.table-striped thead td {
+      border-bottom: 1px solid #000 !important; }
+    .table.table-striped tr td {
+      border: none;
+      border-top: none !important;
+      border-bottom: 1px solid #dddddd;
+      font-size: 1rem;
+      padding: 1rem !important;
+      background-size: 1.5rem !important; }
+    .table.table-striped tr:last-child td {
+      border-bottom: none; } }
 
 .accordion .accordion-item {
   margin: 0;
@@ -233,6 +270,11 @@ p, .p {
       width: 6rem;
       display: block;
       height: 20px; }
+    @media screen and (max-width: 767px) {
+      * .bb-red.single-review {
+        width: 100%;
+        margin: 0 !important;
+        margin-top: 3rem !important; } }
 
 .btn {
   display: flex;
@@ -248,6 +290,11 @@ p, .p {
       background-color: #333333; }
     .btn-black > img {
       margin-right: 1rem; }
+    @media screen and (max-width: 768px) {
+      .btn-black {
+        display: flex;
+        justify-content: center;
+        width: 100%; } }
   .btn-white, .btn-red {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
@@ -260,12 +307,15 @@ p, .p {
     background-color: #D52027;
     color: white; }
 
+header .navbar .navbar-brand img {
+  max-width: 50vw; }
+header .navbar .navbar-toggler-icon {
+  background-image: url(images/menu.svg); }
+  header .navbar .navbar-toggler-icon.profile {
+    background-image: url(images/profile.jpg); }
+
 main {
   position: relative;
-  background-image: url(images/background.jpg);
-  background-position: 50vw 0;
-  background-repeat: no-repeat;
-  background-size: contain;
   background-color: #181c1c; }
   main::before {
     position: absolute;
@@ -292,15 +342,34 @@ main {
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain; }
+      @media screen and (max-width: 768px) {
+        main h1:after {
+          left: calc(50% - 1.5rem); } }
   main .card {
     flex: 1;
-    max-width: 48%;
     padding: 1rem 1.25rem; }
     main .card p, main .card h6 {
       margin-bottom: .25rem; }
     main .card.border-white {
       border: 1px solid #fff;
       background-color: #181c1c; }
+  @media screen and (min-width: 768px) {
+    main {
+      background-image: url(images/background.jpg);
+      background-position: 50vw 0;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      main .row .col > span .card {
+        max-width: 48%; } }
+  @media screen and (max-width: 767px) {
+    main .row .col > span:first-child {
+      display: block;
+      margin-bottom: 50vh; }
+    main::before {
+      background-image: url(images/background_mobile.png);
+      top: 0;
+      height: 100%;
+      bottom: 100%; } }
 
 footer {
   background-color: #000000; }
@@ -354,6 +423,11 @@ footer {
     height: 4.0625rem;
     color: white;
     font-size: 1.875rem; }
+  @media screen and (max-width: 768px) {
+    #stops .unprotected, #stops .protected, #enhances .unprotected, #enhances .protected {
+      height: 25vh; }
+      #stops .unprotected::after, #stops .protected::after, #enhances .unprotected::after, #enhances .protected::after {
+        font-size: 1rem; } }
 #stops .protected::after, #enhances .protected::after {
   content: 'PROTECTED';
   background-color: #D52027; }
