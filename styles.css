@@ -87,6 +87,17 @@ section, .section, main {
   background-color: #FFFFFF; }
 .bg-grey {
   background-color: #f1f1f1; }
+@media screen and (min-width: 768px) {
+  .bg-md-black {
+    background-color: #333333 !important;
+    color: #FFFFFF !important; }
+    .bg-md-black .text-md-red {
+      color: #D52127 !important; }
+  .bg-md-white {
+    background-color: #FFFFFF !important;
+    color: #333333 !important; }
+    .bg-md-white .text-md-red {
+      color: #D52127 !important; } }
 
 .font-weight-regular {
   font-weight: 400; }
@@ -410,28 +421,29 @@ footer {
   margin-bottom: 2.5rem;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
-  #stops .unprotected::after, #stops .protected::after, #enhances .unprotected::after, #enhances .protected::after {
-    content: '';
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+  #stops .unprotected label, #stops .protected label, #enhances .unprotected label, #enhances .protected label {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     bottom: calc(0px - 2.1875rem);
-    left: 25%;
-    width: 50%;
     height: 4.0625rem;
     color: white;
-    font-size: 1.875rem; }
+    font-size: 1.875rem;
+    border: none;
+    padding: 2rem; }
   @media screen and (max-width: 768px) {
     #stops .unprotected, #stops .protected, #enhances .unprotected, #enhances .protected {
       height: 25vh; }
-      #stops .unprotected::after, #stops .protected::after, #enhances .unprotected::after, #enhances .protected::after {
+      #stops .unprotected label, #stops .protected label, #enhances .unprotected label, #enhances .protected label {
         font-size: 1rem; } }
-#stops .protected::after, #enhances .protected::after {
+#stops .protected label, #enhances .protected label {
   content: 'PROTECTED';
   background-color: #D52027; }
-#stops .unprotected::after, #enhances .unprotected::after {
+#stops .unprotected label, #enhances .unprotected label {
   content: 'UNPROTECTED';
   background-color: #6A6A6A; }
 #stops .vertical-divider-red > *, #enhances .vertical-divider-red > * {
@@ -472,6 +484,11 @@ footer {
     bottom: -3.75rem;
     left: 25%;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25); }
+  @media screen and (max-width: 768px) {
+    #enhances .coated, #enhances .uncoated {
+      height: 25vh; }
+      #enhances .coated label, #enhances .uncoated label {
+        font-size: 1rem; } }
 
 #liquid .float-start img {
   width: 3rem;
