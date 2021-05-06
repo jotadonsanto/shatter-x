@@ -85,6 +85,9 @@ section, .section, main {
     }
     &.grey-section{
         background-color: #F4F4F4;
+        @media screen and (max-width: 768px) {
+            background: #FFF;
+        }
     }
     &.black-section {
         background-color: #212121;
@@ -226,6 +229,24 @@ p, .p {
     &.main-review {
         background-color: #F7F7F7;
         box-shadow: 4px 4px 4px rgba(109, 109, 109, 0.24);
+        @media screen and (max-width: 767px) {
+            box-shadow: none;
+            background-color: #FFF;
+            border: 1px solid #E1E1E1;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: .3rem;
+                background-color: #D52127;
+                border-radius: 0 0 0.625rem 0.625rem;
+            }
+        }
         button {
             background-color: transparent;
             border: none;
@@ -241,6 +262,9 @@ p, .p {
             width: 100%;
             display: block;
             margin-bottom: 1rem;
+            @media screen and (max-width: 767px) {
+                background-position: right;
+            }
         }
     }
 }
@@ -299,19 +323,24 @@ p, .p {
         thead {
             td {
                 border-bottom: 1px solid #000!important;
+                font-size: 1.125rem!important;
+                font-weight: bold;
             }
         }
-        tr {
-            td {
-                border: none;
-                border-top: none!important;
-                border-bottom: 1px solid #dddddd;
-                font-size: 1rem;
-                padding: 1rem!important;
-                background-size: 1.5rem!important;
-            }
-            &:last-child td{
-                border-bottom: none;
+        tbody, thead {
+            tr {
+                td {
+                    border: none;
+                    border-top: none;
+                    border-bottom: 1px solid #dddddd;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    padding: 1rem;
+                    background-size: 1.5rem;
+                }
+                &:last-child td{
+                    border-top: none!important;
+                }
             }
         }
     }
@@ -383,7 +412,7 @@ p, .p {
                     height: 20px;
                 }
             }
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 991px) {
                 width: 100%;
                 margin: 0!important;
                 margin-top: 3rem!important;
@@ -529,6 +558,13 @@ footer {
             height: 3rem;
             border: none;
             border-radius: .75rem;
+            @media screen and (max-width: 767px) {
+                background-color: #262626;
+                color: #FFF;
+                img {
+                    fill: #FFF;
+                }
+            }
         }
     }
     a {
@@ -542,6 +578,39 @@ footer {
         width: 100%;
         margin-top: 3rem;
         margin-bottom: 1.75rem;
+    }
+    #footer-accordion {
+        .accordion-item {
+            background-color: transparent;
+            border: 1px solid #FFF;
+            margin-bottom: .5rem;
+            border-radius: .5rem;
+            color: #FFF;
+            button {
+                background-color: transparent;
+                font-size: 1.125rem;
+                color: white;
+                text-transform: uppercase;
+                border-color: transparent;
+                box-shadow: none;
+                &::after {
+                    background-color: transparent;
+                    border-radius: 50%;
+                    padding: 1rem;
+                    background-size: 70%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    color: #8a8a8a;
+                    background-image: url(images/top-w.svg);
+                }
+                &:not(.collapsed) {
+                    background-color: transparent;
+                    &::after {
+                        background-image: url(images/top-w.svg);
+                    }
+                }
+            }
+        }
     }
 }
 #wsywg {
@@ -640,9 +709,19 @@ footer {
     }
     .uncoated {
         background-image: url(images/uncoated.jpg);
+        >div {
+            @media screen and (max-width: 768px) {
+                text-align: left!important;
+            }
+        }
     }
     .coated {
         background-image: url(images/coated.jpg);
+        >div {
+            @media screen and (max-width: 768px) {
+                text-align: right!important;
+            }
+        }
     }
     .coated, .uncoated {
         height: 25rem;
@@ -656,10 +735,14 @@ footer {
             bottom: -3.75rem;
             left: 25%;
             box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-        }
 
-        @media screen and (max-width: 768px) {
-            
+            @media screen and (max-width: 768px) {
+                width: calc(100% - 14vw);
+                left: 7vw;
+                top: 103%;
+                bottom: unset;
+                box-shadow: none;
+            }
         }
     }
 }
@@ -681,12 +764,13 @@ footer {
 }
 .matbus, .airport {
     background-repeat: no-repeat;
-    background-size: 100% calc(100% - 0.625rem);
     background-position: center left;
-    > img {
-        border-bottom-left-radius: 0.3125rem;
-        border-bottom-right-radius: 0.3125rem;
-        z-index: -1;
+    background-size: cover;
+    height: 22rem;
+    border-bottom-right-radius: .625rem;
+    border-bottom-left-radius: .625rem;
+    @media screen and (max-width: 768px) {
+
     }
 }
 .matbus {

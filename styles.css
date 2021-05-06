@@ -67,6 +67,9 @@ section, .section, main {
         background-color: #F4F4F4; } }
   section.grey-section, .section.grey-section, main.grey-section {
     background-color: #F4F4F4; }
+    @media screen and (max-width: 768px) {
+      section.grey-section, .section.grey-section, main.grey-section {
+        background: #FFF; } }
   section.black-section, .section.black-section, main.black-section {
     background-color: #212121; }
 
@@ -175,6 +178,23 @@ p, .p {
   .card.main-review {
     background-color: #F7F7F7;
     box-shadow: 4px 4px 4px rgba(109, 109, 109, 0.24); }
+    @media screen and (max-width: 767px) {
+      .card.main-review {
+        box-shadow: none;
+        background-color: #FFF;
+        border: 1px solid #E1E1E1;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0; }
+        .card.main-review::after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: .3rem;
+          background-color: #D52127;
+          border-radius: 0 0 0.625rem 0.625rem; } }
     .card.main-review button {
       background-color: transparent;
       border: none;
@@ -189,6 +209,9 @@ p, .p {
       width: 100%;
       display: block;
       margin-bottom: 1rem; }
+      @media screen and (max-width: 767px) {
+        .card.main-review .stars {
+          background-position: right; } }
 
 .table.table-striped td {
   border-right: 0.1875rem solid #eee; }
@@ -223,16 +246,19 @@ p, .p {
     max-width: 100%;
     overflow-y: scroll; }
     .table.table-striped thead td {
-      border-bottom: 1px solid #000 !important; }
-    .table.table-striped tr td {
+      border-bottom: 1px solid #000 !important;
+      font-size: 1.125rem !important;
+      font-weight: bold; }
+    .table.table-striped tbody tr td, .table.table-striped thead tr td {
       border: none;
-      border-top: none !important;
+      border-top: none;
       border-bottom: 1px solid #dddddd;
       font-size: 1rem;
-      padding: 1rem !important;
-      background-size: 1.5rem !important; }
-    .table.table-striped tr:last-child td {
-      border-bottom: none; } }
+      font-weight: 400;
+      padding: 1rem;
+      background-size: 1.5rem; }
+    .table.table-striped tbody tr:last-child td, .table.table-striped thead tr:last-child td {
+      border-top: none !important; } }
 
 .accordion .accordion-item {
   margin: 0;
@@ -281,7 +307,7 @@ p, .p {
       width: 6rem;
       display: block;
       height: 20px; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       * .bb-red.single-review {
         width: 100%;
         margin: 0 !important;
@@ -392,6 +418,12 @@ footer {
     height: 3rem;
     border: none;
     border-radius: .75rem; }
+    @media screen and (max-width: 767px) {
+      footer button.scroll-top {
+        background-color: #262626;
+        color: #FFF; }
+        footer button.scroll-top img {
+          fill: #FFF; } }
   footer a {
     display: block; }
   footer .payments {
@@ -402,6 +434,32 @@ footer {
     width: 100%;
     margin-top: 3rem;
     margin-bottom: 1.75rem; }
+  footer #footer-accordion .accordion-item {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    color: #FFF; }
+    footer #footer-accordion .accordion-item button {
+      background-color: transparent;
+      font-size: 1.125rem;
+      color: white;
+      text-transform: uppercase;
+      border-color: transparent;
+      box-shadow: none; }
+      footer #footer-accordion .accordion-item button::after {
+        background-color: transparent;
+        border-radius: 50%;
+        padding: 1rem;
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #8a8a8a;
+        background-image: url(images/top-w.svg); }
+      footer #footer-accordion .accordion-item button:not(.collapsed) {
+        background-color: transparent; }
+        footer #footer-accordion .accordion-item button:not(.collapsed)::after {
+          background-image: url(images/top-w.svg); }
 
 #wsywg {
   font-weight: 500; }
@@ -470,8 +528,14 @@ footer {
   background-image: url(images/unprotected_2.jpg); }
 #enhances .uncoated {
   background-image: url(images/uncoated.jpg); }
+  @media screen and (max-width: 768px) {
+    #enhances .uncoated > div {
+      text-align: left !important; } }
 #enhances .coated {
   background-image: url(images/coated.jpg); }
+  @media screen and (max-width: 768px) {
+    #enhances .coated > div {
+      text-align: right !important; } }
 #enhances .coated, #enhances .uncoated {
   height: 25rem;
   background-size: cover;
@@ -484,11 +548,13 @@ footer {
     bottom: -3.75rem;
     left: 25%;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25); }
-  @media screen and (max-width: 768px) {
-    #enhances .coated, #enhances .uncoated {
-      height: 25vh; }
-      #enhances .coated label, #enhances .uncoated label {
-        font-size: 1rem; } }
+    @media screen and (max-width: 768px) {
+      #enhances .coated > div, #enhances .uncoated > div {
+        width: calc(100% - 14vw);
+        left: 7vw;
+        top: 103%;
+        bottom: unset;
+        box-shadow: none; } }
 
 #liquid .float-start img {
   width: 3rem;
@@ -502,12 +568,11 @@ footer {
 
 .matbus, .airport {
   background-repeat: no-repeat;
-  background-size: 100% calc(100% - 0.625rem);
-  background-position: center left; }
-  .matbus > img, .airport > img {
-    border-bottom-left-radius: 0.3125rem;
-    border-bottom-right-radius: 0.3125rem;
-    z-index: -1; }
+  background-position: center left;
+  background-size: cover;
+  height: 22rem;
+  border-bottom-right-radius: .625rem;
+  border-bottom-left-radius: .625rem; }
 
 .matbus {
   background-image: url(images/matbus.jpg); }

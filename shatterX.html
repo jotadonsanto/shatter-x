@@ -355,20 +355,20 @@
             <div class="col-12">
                 <div class="row mb-5 mobile-no-padded">
                     <div class="col bg-white uncoated">
-                        <div class="bg-white text-center p-2">
-                            <h4>Uncoated</h4>
+                        <div class="bg-white text-center p-0 p-md-2">
+                            <h4 class="m-0 mb-md-1">Uncoated</h4>
                             <h5>Under microscope Zoomed 100,000%</h5>
                         </div>
                     </div>
                     <div class="col bg-white coated">
-                        <div class="bg-white text-center p-2">
-                            <h4 class="text-red">Coated</h4>
+                        <div class="bg-white text-center p-0 p-md-2">
+                            <h4 class="m-0 mb-md-1 text-red">Coated</h4>
                             <h5>Under microscope Zoomed 100,000%</h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 d-none d-md-flex">
                 <div class="row mt-5 text-center">
                   <div class="col">
                       <h4 class="mb-2">Before ShatterX Is Applied.</h4>
@@ -379,6 +379,9 @@
                       <h4 class="font-weight-regular">Glass surfaces aren’t as smooth as they seem. Under a microscope, they are full of valleys and ridges that become points of weakness.</h4>
                   </div>
                 </div>
+            </div>
+            <div class="col-12 d-md-none">
+                <h4 class="mt-4">After ShatterX liquid is applied to a windshield, the glass particles in the ShatterX solution bond to the windshield to fill the valleys and ridges at the nano level. This helps strengthen the hardness of the coated glass.</h4>
             </div>
         </div>
     </section>
@@ -461,17 +464,20 @@
             <div class="col-12">
                 <h2><span class="text-red">Reviews</span> From Our Customers</h2>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="card main-review p-5 h-100 justify-content-between">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card main-review p-4 p-md-5 h-100 justify-content-between">
                     <div>
-                        <h4 class="h1 xl m-0"><strong>5.0</strong></h4>
-                        <span class="stars"></span>
-                        <h5 class="lg">Based on 9 Reviews</h5>
+                        <span class="d-flex flex-row justify-content-between flex-md-column">
+                            <h4 class="h1 xl m-0"><strong>5.0</strong></h4>
+                            <span class="stars mt-3 mt-md-0"></span>
+                        </span>
+                        <h5 class="lg d-none d-md-block">Based on 9 Reviews</h5>
+                        <h3 class="text-red d-md-none">Based on 9 Reviews</h3>
                     </div>
-                    <button class="h6 text-red"><u>View all customer reviews</u></button>
+                    <button class="h6 text-red d-none d-md-block"><u>View all customer reviews</u></button>
                 </div>
             </div>
-            <div class="col-12 col-md-7 offset-md-1">
+            <div class="col-12 col-md-5 offset-md-1 col-lg-6 offset-lg-1">
                 <div class="bb-red single-review pt-1">
                     <div class="data d-flex flex-row justify-content-between">
                         <div class="d-flex flex-row">
@@ -540,14 +546,12 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div class="bb-red xl matbus">
-                    <img src="images/matbus.jpg" alt="">
                 </div>
                 <h3 class="mt-5">Matbus</h3>
                 <h5>A bus transportation system in Fargo and West Fargo, ND, and Moorhead and Dilworth, MN. This public transportation has 24 routes throughout the metro area. <span class="text-red">MATBUS has trusted ShatterX to prevent windshield cracks and improve windshield protection.</span></h5>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="bb-red xl airport">
-                    <img src="images/hector_airport.jpg" alt="">
                 </div>
                 <h3 class="mt-5">Hector International Airport</h3>
                 <h5>Built in 1986, this civil-military public airport is the busiest in North Dakota. It covers 2,500 acres and has three runways, with an average of 182 departures and arrivals per day. <span class="text-red">This airport uses ShatterX for its numerous cargo vehicles to protect from outside elements and debris that can cause damage to windshields.</span></h5>
@@ -562,14 +566,14 @@
                 <h2>Frequently Asked Questions</h2>
             </div>
             <div class="col-12">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="faq-accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             Accordion Item #1
                         </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faq-accordion">
                         <div class="accordion-body">
                             <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
@@ -581,7 +585,7 @@
                             Accordion Item #2
                         </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq-accordion">
                         <div class="accordion-body">
                             <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
@@ -593,7 +597,7 @@
                             Accordion Item #3
                         </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq-accordion">
                         <div class="accordion-body">
                             <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
@@ -625,8 +629,8 @@
 
     <!-- Footer -->
     <footer class="section text-white">
-        <button class="scroll-top bg-grey">SCROLL TO TOP <img src="images/top.svg" alt="Scroll to top" /></button>
-        <div class="row">
+        <button class="scroll-top bg-grey">SCROLL TO TOP <img class="d-inline d-md-none" src="images/top-w.svg" alt="Scroll to top" /><img class="d-none d-md-inline" src="images/top.svg" alt="Scroll to top" /></button>
+        <div class="row d-none d-md-flex">
             <div class="col-3">
                 <p class="lg mb-4"><strong>OUR COMPANY</strong></p>
                 <a href="#" class="p mt-2">ABOUT</a>
@@ -650,6 +654,48 @@
                 <a href="#" class="p mt-2">West Fargo, North Dakota</a>
                 <a href="#" class="p mt-2">info@shatterx.com</a>
                 <a href="#" class="p mt-2">ABOUT</a>
+            </div>
+        </div>
+        <div class="row d-md-none d-flex"></div>
+            <div class="col-12">
+                <div class="accordion" id="footer-accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#footer-accordion">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#footer-accordion">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#footer-accordion">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
