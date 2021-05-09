@@ -389,6 +389,9 @@ p, .p {
             height: .3rem;
             background-color: #D52127;
             border-radius: 0 0 0.625rem 0.625rem;
+            @media screen and (max-width: 768px) {
+                height: .625rem;
+            }
         }
         &.xl::after {
             height: .6rem;
@@ -521,7 +524,7 @@ main {
             background-color: #181c1c;
         }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1201px) {
         background-image: url(images/background.jpg);
         background-position: 50vw 0;
         background-repeat: no-repeat;
@@ -532,7 +535,25 @@ main {
             }
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+        padding-top: calc(30vh + 5rem);
+        .row .col >span {
+            &:first-child {
+                display: block;
+                // margin-bottom: 50vh;
+            }
+            .card {
+                max-width: 48%;
+            }
+        }
+        &::before {
+            background-image: url(images/background.jpg);
+            background-size: cover;
+            top: 0;
+            height: 30vh;
+        }
+    }
+    @media screen and (max-width: 768px) {
         .row .col >span {
             &:first-child {
                 display: block;
@@ -686,7 +707,7 @@ footer {
                 left: 0%;
                 background-color: #D52027;
                 width: .6rem;
-                height: 110%;
+                height: 102%;
                 z-index: 9;
             }
         }
@@ -755,11 +776,31 @@ footer {
     }
 }
 #whatsin {
+    @media screen and (max-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+        .flex-row {
+            .text-red {
+                color: #555555!important;
+                margin-top: 2.5rem;
+                padding-right: 30%;
+            }
+        }
+    }
     .whatsin {
         background-image: url(images/whatsin.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+    .bb-red {
+        background-image: url(images/whatsin_mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 22rem;
+        border-radius: 0.625rem;
+        margin-bottom: 2.5rem;
     }
 }
 .matbus, .airport {
@@ -769,9 +810,6 @@ footer {
     height: 22rem;
     border-bottom-right-radius: .625rem;
     border-bottom-left-radius: .625rem;
-    @media screen and (max-width: 768px) {
-
-    }
 }
 .matbus {
     background-image: url(images/matbus.jpg);
