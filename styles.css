@@ -284,40 +284,44 @@ p, .p {
 
 * {
   position: relative; }
-  * .bb-red::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: .3rem;
-    background-color: #D52127;
-    border-radius: 0 0 0.625rem 0.625rem; }
-    @media screen and (max-width: 768px) {
-      * .bb-red::after {
-        height: .625rem; } }
-  * .bb-red.xl::after {
-    height: .6rem; }
-  * .bb-red.single-review {
-    width: 45%;
-    float: left; }
-    * .bb-red.single-review:first-child, * .bb-red.single-review:nth-child(2) {
-      margin-bottom: 3rem; }
-    * .bb-red.single-review:first-child, * .bb-red.single-review:nth-child(3) {
-      margin-right: 10%; }
-    * .bb-red.single-review .data .stars {
-      background-image: url(images/stars.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 6rem;
+  * .bb-red {
+    border-bottom-left-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+    overflow: hidden; }
+    * .bb-red::after {
+      content: '';
       display: block;
-      height: 20px; }
-    @media screen and (max-width: 991px) {
-      * .bb-red.single-review {
-        width: 100%;
-        margin: 0 !important;
-        margin-top: 3rem !important; } }
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: .3rem;
+      background-color: #D52127;
+      border-radius: 0 0 0.625rem 0.625rem; }
+      @media screen and (max-width: 768px) {
+        * .bb-red::after {
+          height: .625rem; } }
+    * .bb-red.xl::after {
+      height: .6rem; }
+    * .bb-red.single-review {
+      width: 45%;
+      float: left; }
+      * .bb-red.single-review:first-child, * .bb-red.single-review:nth-child(2) {
+        margin-bottom: 3rem; }
+      * .bb-red.single-review:first-child, * .bb-red.single-review:nth-child(3) {
+        margin-right: 10%; }
+      * .bb-red.single-review .data .stars {
+        background-image: url(images/stars.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 6rem;
+        display: block;
+        height: 20px; }
+      @media screen and (max-width: 991px) {
+        * .bb-red.single-review {
+          width: 100%;
+          margin: 0 !important;
+          margin-top: 3rem !important; } }
 
 .btn {
   display: flex;

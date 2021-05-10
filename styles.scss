@@ -382,6 +382,9 @@ p, .p {
 * {
     position: relative;
     .bb-red {
+        border-bottom-left-radius: .625rem;
+        border-bottom-right-radius: .625rem;
+        overflow: hidden;
         &::after {
             content: '';
             display: block;
