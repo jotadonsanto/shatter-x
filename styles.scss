@@ -524,6 +524,31 @@ main {
             background-color: #181c1c;
         }
     }
+    .year, .nontoxic, .nosticky, .twice {
+        height: 10vh;
+        width: 100px;
+        margin: 0 auto 1rem auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: unset;
+        background-color: #6A6A6A;
+        border-radius: 50%;
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+    .year {
+        background-image: url(images/year_mobile.svg);
+    }
+    .nontoxic {
+        background-image: url(images/nontoxic_mobile.svg);
+    }
+    .nosticky {
+        background-image: url(images/sticky_mobile.svg);
+    }
+    .twice {
+        background-image: url(images/twice_mobile.svg);
+    }
     @media screen and (min-width: 1201px) {
         background-image: url(images/background.jpg);
         background-position: 50vw 0;
@@ -540,7 +565,6 @@ main {
         .row .col >span {
             &:first-child {
                 display: block;
-                // margin-bottom: 50vh;
             }
             .card {
                 max-width: 48%;
@@ -557,13 +581,13 @@ main {
         .row .col >span {
             &:first-child {
                 display: block;
-                margin-bottom: 50vh;
+                margin-bottom: 40vh;
             }
         }
         &::before {
             background-image: url(images/background_mobile.png);
             top: 0;
-            height: 100%;
+            height: 80vh;
             bottom: 100%;
         }
     }

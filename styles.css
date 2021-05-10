@@ -393,6 +393,25 @@ main {
     main .card.border-white {
       border: 1px solid #fff;
       background-color: #181c1c; }
+  main .year, main .nontoxic, main .nosticky, main .twice {
+    height: 10vh;
+    width: 100px;
+    margin: 0 auto 1rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: unset;
+    background-color: #6A6A6A;
+    border-radius: 50%; }
+    main .year p, main .nontoxic p, main .nosticky p, main .twice p {
+      margin-bottom: 1rem; }
+  main .year {
+    background-image: url(images/year_mobile.svg); }
+  main .nontoxic {
+    background-image: url(images/nontoxic_mobile.svg); }
+  main .nosticky {
+    background-image: url(images/sticky_mobile.svg); }
+  main .twice {
+    background-image: url(images/twice_mobile.svg); }
   @media screen and (min-width: 1201px) {
     main {
       background-image: url(images/background.jpg);
@@ -416,11 +435,11 @@ main {
   @media screen and (max-width: 768px) {
     main .row .col > span:first-child {
       display: block;
-      margin-bottom: 50vh; }
+      margin-bottom: 40vh; }
     main::before {
       background-image: url(images/background_mobile.png);
       top: 0;
-      height: 100%;
+      height: 80vh;
       bottom: 100%; } }
 
 footer {
