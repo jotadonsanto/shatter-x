@@ -124,6 +124,9 @@ h2, .h2 {
   margin-bottom: 2.5rem; }
   h2 .lg, .h2 .lg {
     font-size: 2.375rem; }
+  @media screen and (max-width: 767px) {
+    h2, .h2 {
+      font-size: 2rem !important; } }
 
 h3, .h3 {
   font-size: 1.875rem;
@@ -394,7 +397,7 @@ main {
       border: 1px solid #fff;
       background-color: #181c1c; }
   main .year, main .nontoxic, main .nosticky, main .twice {
-    height: 10vh;
+    height: 100px;
     width: 100px;
     margin: 0 auto 1rem auto;
     background-repeat: no-repeat;
@@ -435,11 +438,11 @@ main {
   @media screen and (max-width: 768px) {
     main .row .col > span:first-child {
       display: block;
-      margin-bottom: 40vh; }
+      margin-bottom: 50vh; }
     main::before {
       background-image: url(images/background_mobile.png);
       top: 0;
-      height: 80vh;
+      height: 100vh;
       bottom: 100%; } }
 
 footer {
@@ -548,7 +551,7 @@ footer {
     left: 0%;
     background-color: #D52027;
     width: .6rem;
-    height: 102%;
+    height: 99%;
     z-index: 9; }
 
 #stops .protected {
@@ -576,6 +579,9 @@ footer {
   background-repeat: no-repeat;
   color: #555555;
   margin-bottom: 3.75rem; }
+  @media screen and (max-width: 768px) {
+    #enhances .coated, #enhances .uncoated {
+      height: 15rem !important; } }
   #enhances .coated > div, #enhances .uncoated > div {
     position: absolute;
     width: 50%;
