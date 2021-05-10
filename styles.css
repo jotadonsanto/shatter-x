@@ -438,11 +438,11 @@ main {
   @media screen and (max-width: 768px) {
     main .row .col > span:first-child {
       display: block;
-      margin-bottom: 50vh; }
+      margin-bottom: 52vh; }
     main::before {
       background-image: url(images/background_mobile.png);
       top: 0;
-      height: 100vh;
+      height: 105vh;
       bottom: 100%; } }
 
 footer {
