@@ -419,6 +419,8 @@ main {
     background-image: url(images/sticky_mobile.svg); }
   main .twice {
     background-image: url(images/twice_mobile.svg); }
+  main .text-green {
+    color: #2EC721; }
   @media screen and (min-width: 1201px) {
     main {
       background-image: url(images/background.jpg);
@@ -513,6 +515,9 @@ footer {
 #keepyou img {
   width: 4.0625rem;
   margin: 0 auto; }
+@media screen and (max-width: 768px) {
+  #keepyou {
+    background-color: #FFF; } }
 
 @media screen and (max-width: 768px) {
   #windshield .img-fluid {

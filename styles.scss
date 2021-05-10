@@ -555,6 +555,9 @@ main {
     .twice {
         background-image: url(images/twice_mobile.svg);
     }
+    .text-green {
+        color: #2EC721;
+    }
     @media screen and (min-width: 1201px) {
         background-image: url(images/background.jpg);
         background-position: 50vw 0;
@@ -678,6 +681,9 @@ footer {
     img {
         width: 4.0625rem;
         margin: 0 auto;
+    }
+    @media screen and (max-width: 768px) {
+        background-color: #FFF;
     }
 }
 #windshield {
