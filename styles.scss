@@ -1,15 +1,16 @@
 // SHATTER X - Create and overwrite Bootstrap styles
 //Reboot
 html, body {
-    color: #333333;
+    color: #333333!important;
     font-family: 'Inter', sans-serif!important;
     font-weight: 400;
+    padding: 0!important;
 }
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit!important;
     &:hover {
-        color: inherit;
+        color: inherit!important;
     }
 }
 @media screen and (min-width: 1464px) {
@@ -23,12 +24,13 @@ a {
     }
 }
 // Sections
-section, .section, main {
+section, .section, main.main {
     @media screen and (min-width: 1464px) {
         padding: 5rem 17vw;
     }
     @media screen and (max-width: 768px) {
         padding: 3.25rem 7vw;
+        max-width: 100vw;
         .mobile-no-padded {
             width: 100vw;
             margin-left: -7vw;
@@ -96,16 +98,16 @@ section, .section, main {
 // Texts
 .text- {
     &red {
-        color: #D52127;
+        color: #D52127!important;
     }
     &black {
-        color: #333333;
+        color: #333333!important;
     }
     &white {
-        color: #FFFFFF;
+        color: #FFFFFF!important;
     }
     &grey {
-        color: #555555;
+        color: #555555!important;
     }
 }
 //Backgrounds
@@ -142,82 +144,87 @@ section, .section, main {
 
 //Typographies
 .font-weight-regular {
-    font-weight: 400;
+    font-weight: 400!important;
 }
 .font-weight-medium {
-    font-weight: 500;
+    font-weight: 500!important;
 }
 h1, .h1 {
-    font-size: 2.375rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 2.375rem!important;
+    font-family: 'Poppins', sans-serif!important;
+    font-weight: 500!important;
+    line-height: 1.2!important;
     &.xl {
-        font-size: 5.25rem;
+        font-size: 5.25rem!important;
     }
 }
 h2, .h2 {
     .lg {
-        font-size: 2.375rem;
+        font-size: 2.375rem!important;
     }
-    font-size: 2.25rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 2.5rem;
+    font-size: 2.25rem!important;
+    font-family: 'Poppins', sans-serif!important;
+    font-weight: 500!important;
+    line-height: 1.2!important;
+    margin-bottom: 2.5rem!important;
     @media screen and (max-width: 767px) {
         font-size: 2rem!important;
     }
 }
 h3, .h3 {
     &.lg {
-        font-size: 2rem;
+        font-size: 2rem!important;
     }
-    font-size: 1.875rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 2.5rem;
+    font-size: 1.875rem!important;
+    font-family: 'Poppins', sans-serif!important;
+    font-weight: 500!important;
+    line-height: 1.2!important;
+    margin-bottom: 2.5rem!important;
 }
 h4, .h4 {
     &.lg {
-        font-size: 1.75rem;
+        font-size: 1.75rem!important;
     }
-    font-size: 1.625rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 1.625rem!important;
+    font-family: 'Inter', sans-serif!important;
+    font-weight: 500!important;
+    line-height: 1.2!important;
 }
 h5, .h5 {
     &.lg {
-        font-size: 1.5rem;
+        font-size: 1.5rem!important;
     }
-    font-size: 1.375rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    line-height: 1.2;
+    font-size: 1.375rem!important;
+    font-family: 'Inter', sans-serif!important;
+    font-weight: 400!important;
+    line-height: 1.2!important;
+    color: inherit!important;
 
 }
 h6, .h6 {
-    font-size: 1.25rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    line-height: 1.2;
+    font-size: 1.25rem!important;
+    font-family: 'Inter', sans-serif!important;
+    font-weight: 400!important;
+    line-height: 1.2!important;
+    color: inherit!important;
 }
 p, .p {
     &.lg {
-        font-size: 1.125rem;
+        font-size: 1.125rem!important;
     }
-    font-size: 1rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    line-height: 1.2;
+    font-size: 1rem!important;
+    font-family: 'Inter', sans-serif!important;
+    font-weight: 400!important;
+    line-height: 1.2!important;
 }
 
 //Helpers
 .col-5ths {
     width: 20%!important;
     flex: none!important;
+}
+.hide {
+    display: none!important;
 }
 
 //Card component
@@ -258,7 +265,7 @@ p, .p {
             font-weight: bold;
         }
         .stars {
-            background-image: url(images/stars.svg);
+            background-image: url(https://jotadonsanto.github.io/shatter-x/images/stars.svg);
             background-repeat: no-repeat;
             background-size: contain;
             height: 2.5rem;
@@ -308,10 +315,10 @@ p, .p {
                     background-size: 2rem;
                 }
                 &.checked {
-                    background-image: url(images/checked.svg);
+                    background-image: url(https://jotadonsanto.github.io/shatter-x/images/checked.svg);
                 }
                 &.failed {
-                    background-image: url(images/failed.svg);
+                    background-image: url(https://jotadonsanto.github.io/shatter-x/images/failed.svg);
                 }
             }
         }
@@ -357,6 +364,9 @@ p, .p {
         border-bottom: 0.125rem solid #ddd;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
+        .accordion-header {
+            margin-bottom: 0!important;
+        }
         .accordion-button {
             &::after {
                 background-color: #f3f3f3;
@@ -413,7 +423,7 @@ p, .p {
             }
             .data {
                 .stars {
-                    background-image: url(images/stars.svg);
+                    background-image: url(https://jotadonsanto.github.io/shatter-x/images/stars.svg);
                     background-repeat: no-repeat;
                     background-size: contain;
                     width: 6rem;
@@ -471,6 +481,7 @@ p, .p {
 
 //SPECIFIC STYLES
 header {
+    position: relative!important;
     .navbar {
         .navbar-brand {
             img {
@@ -478,14 +489,14 @@ header {
             }
         }
         .navbar-toggler-icon {
-            background-image: url(images/menu.svg);
+            background-image: url(https://jotadonsanto.github.io/shatter-x/images/menu.svg);
             &.profile {
-                background-image: url(images/profile.jpg);
+                background-image: url(https://jotadonsanto.github.io/shatter-x/images/profile.jpg);
             }
         }
     }
 }
-main {
+main.main {
     position: relative;
     background-color: #181c1c;
     &::before {
@@ -495,7 +506,7 @@ main {
         left: 0;
         width: 100%;
         height: 74%;
-        background-image: url(images/background.png);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/background.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain
@@ -510,7 +521,7 @@ main {
             left: 0;
             width: 3rem;
             height: 3rem;
-            background-image: url(images/shield.svg);
+            background-image: url(https://jotadonsanto.github.io/shatter-x/images/shield.svg);
             background-repeat: no-repeat;
             background-position: left;
             background-size: contain;
@@ -544,22 +555,22 @@ main {
         }
     }
     .year {
-        background-image: url(images/year_mobile.svg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/year_mobile.svg);
     }
     .nontoxic {
-        background-image: url(images/nontoxic_mobile.svg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/nontoxic_mobile.svg);
     }
     .nosticky {
-        background-image: url(images/sticky_mobile.svg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/sticky_mobile.svg);
     }
     .twice {
-        background-image: url(images/twice_mobile.svg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/twice_mobile.svg);
     }
     .text-green {
         color: #2EC721;
     }
     @media screen and (min-width: 1201px) {
-        background-image: url(images/background.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/background.jpg);
         background-position: 50vw 0;
         background-repeat: no-repeat;
         background-size: contain;
@@ -580,7 +591,7 @@ main {
             }
         }
         &::before {
-            background-image: url(images/background.jpg);
+            background-image: url(https://jotadonsanto.github.io/shatter-x/images/background.jpg);
             background-size: cover;
             top: 0;
             height: 30vh;
@@ -594,7 +605,7 @@ main {
             }
         }
         &::before {
-            background-image: url(images/background_mobile.png);
+            background-image: url(https://jotadonsanto.github.io/shatter-x/images/background_mobile.png);
             top: 0;
             height: 105vh;
             bottom: 100%;
@@ -625,7 +636,7 @@ footer {
         display: block;
     }
     .payments {
-        background-image: url(images/payments.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/payments.jpg);
         background-position: center;
         background-repeat: no-repeat;
         height: 3.125rem;
@@ -655,12 +666,12 @@ footer {
                     background-position: center;
                     background-repeat: no-repeat;
                     color: #8a8a8a;
-                    background-image: url(images/top-w.svg);
+                    background-image: url(https://jotadonsanto.github.io/shatter-x/images/top-w.svg);
                 }
                 &:not(.collapsed) {
                     background-color: transparent;
                     &::after {
-                        background-image: url(images/top-w.svg);
+                        background-image: url(https://jotadonsanto.github.io/shatter-x/images/top-w.svg);
                     }
                 }
             }
@@ -678,12 +689,25 @@ footer {
     }
 }
 #keepyou {
-    img {
-        width: 4.0625rem;
-        margin: 0 auto;
+    .d-md-flex {
+        img {
+            width: 4.0625rem;
+            margin: 0 auto;
+        }
     }
     @media screen and (max-width: 768px) {
         background-color: #FFFFFF;
+    }
+    ul {
+        li {
+            width: 50%;
+            float: left;
+            list-style-type: none;
+            font-size: 1.25rem;
+            img {
+                margin-right: 1rem;
+            }
+        }
     }
 }
 #windshield {
@@ -760,21 +784,21 @@ footer {
 }
 #stops {
     .protected {
-        background-image: url(images/protected_1.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/protected_1.jpg);
     }
     .unprotected {
-        background-image: url(images/unprotected_1.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/unprotected_1.jpg);
     }
 }
 #enhances {
     .protected {
-        background-image: url(images/protected_2.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/protected_2.jpg);
     }
     .unprotected {
-        background-image: url(images/unprotected_2.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/unprotected_2.jpg);
     }
     .uncoated {
-        background-image: url(images/uncoated.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/uncoated.jpg);
         >div {
             @media screen and (max-width: 768px) {
                 text-align: left!important;
@@ -782,7 +806,7 @@ footer {
         }
     }
     .coated {
-        background-image: url(images/coated.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/coated.jpg);
         >div {
             @media screen and (max-width: 768px) {
                 text-align: right!important;
@@ -837,13 +861,13 @@ footer {
         }
     }
     .whatsin {
-        background-image: url(images/whatsin.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/whatsin.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
     }
     .bb-red {
-        background-image: url(images/whatsin_mobile.jpg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/whatsin_mobile.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -861,8 +885,8 @@ footer {
     border-bottom-left-radius: .625rem;
 }
 .matbus {
-    background-image: url(images/matbus.jpg);
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/matbus.jpg);
 }
 .airport {
-    background-image: url(images/hector_airport.jpg);
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/hector_airport.jpg);
 }

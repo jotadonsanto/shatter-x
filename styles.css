@@ -1,13 +1,14 @@
 html, body {
-  color: #333333;
+  color: #333333 !important;
   font-family: "Inter", sans-serif !important;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 0 !important; }
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit !important; }
   a:hover {
-    color: inherit; }
+    color: inherit !important; }
 
 @media screen and (min-width: 1464px) {
   html, body {
@@ -15,47 +16,48 @@ a {
 @media screen and (max-width: 1463px) {
   html, body {
     font-size: 13px; } }
-section, .section, main {
+section, .section, main.main {
   padding: 5rem 12vw;
   position: relative; }
   @media screen and (min-width: 1464px) {
-    section, .section, main {
+    section, .section, main.main {
       padding: 5rem 17vw; } }
   @media screen and (max-width: 768px) {
-    section, .section, main {
-      padding: 3.25rem 7vw; }
-      section .mobile-no-padded, .section .mobile-no-padded, main .mobile-no-padded {
+    section, .section, main.main {
+      padding: 3.25rem 7vw;
+      max-width: 100vw; }
+      section .mobile-no-padded, .section .mobile-no-padded, main.main .mobile-no-padded {
         width: 100vw;
         margin-left: -7vw;
         --bs-gutter-x: 0; } }
-  section.relaxed, .section.relaxed, main.relaxed {
+  section.relaxed, .section.relaxed, main.main.relaxed {
     padding: 5rem 10vw; }
     @media screen and (min-width: 1464px) {
-      section.relaxed, .section.relaxed, main.relaxed {
+      section.relaxed, .section.relaxed, main.main.relaxed {
         padding: 5rem 13vw; } }
     @media screen and (max-width: 768px) {
-      section.relaxed, .section.relaxed, main.relaxed {
+      section.relaxed, .section.relaxed, main.main.relaxed {
         padding: 3.25rem 3vw; }
-        section.relaxed .mobile-no-padded, .section.relaxed .mobile-no-padded, main.relaxed .mobile-no-padded {
+        section.relaxed .mobile-no-padded, .section.relaxed .mobile-no-padded, main.main.relaxed .mobile-no-padded {
           width: 100vw;
           margin-left: -7vw;
           --bs-gutter-x: 0; } }
-  section.tight, .section.tight, main.tight {
+  section.tight, .section.tight, main.main.tight {
     padding: 5rem 13vw; }
     @media screen and (min-width: 1464px) {
-      section.tight, .section.tight, main.tight {
+      section.tight, .section.tight, main.main.tight {
         padding: 5rem 21vw; } }
     @media screen and (max-width: 768px) {
-      section.tight, .section.tight, main.tight {
+      section.tight, .section.tight, main.main.tight {
         padding: 3.25rem 9vw; }
-        section.tight .mobile-no-padded, .section.tight .mobile-no-padded, main.tight .mobile-no-padded {
+        section.tight .mobile-no-padded, .section.tight .mobile-no-padded, main.main.tight .mobile-no-padded {
           width: 100vw;
           margin-left: -7vw;
           --bs-gutter-x: 0; } }
-  section.white-section, .section.white-section, main.white-section {
+  section.white-section, .section.white-section, main.main.white-section {
     background-color: #FFFFFF; }
     @media screen and (min-width: 768px) {
-      section.white-section-grey::after, .section.white-section-grey::after, main.white-section-grey::after {
+      section.white-section-grey::after, .section.white-section-grey::after, main.main.white-section-grey::after {
         content: '';
         display: block;
         position: absolute;
@@ -65,22 +67,22 @@ section, .section, main {
         width: 100%;
         height: 60%;
         background-color: #F4F4F4; } }
-  section.grey-section, .section.grey-section, main.grey-section {
+  section.grey-section, .section.grey-section, main.main.grey-section {
     background-color: #F4F4F4; }
     @media screen and (max-width: 768px) {
-      section.grey-section, .section.grey-section, main.grey-section {
+      section.grey-section, .section.grey-section, main.main.grey-section {
         background: #FFF; } }
-  section.black-section, .section.black-section, main.black-section {
+  section.black-section, .section.black-section, main.main.black-section {
     background-color: #212121; }
 
 .text-red {
-  color: #D52127; }
+  color: #D52127 !important; }
 .text-black {
-  color: #333333; }
+  color: #333333 !important; }
 .text-white {
-  color: #FFFFFF; }
+  color: #FFFFFF !important; }
 .text-grey {
-  color: #555555; }
+  color: #555555 !important; }
 
 .bg-red {
   background-color: #D52127; }
@@ -103,73 +105,78 @@ section, .section, main {
       color: #D52127 !important; } }
 
 .font-weight-regular {
-  font-weight: 400; }
+  font-weight: 400 !important; }
 
 .font-weight-medium {
-  font-weight: 500; }
+  font-weight: 500 !important; }
 
 h1, .h1 {
-  font-size: 2.375rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  line-height: 1.2; }
+  font-size: 2.375rem !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important; }
   h1.xl, .h1.xl {
-    font-size: 5.25rem; }
+    font-size: 5.25rem !important; }
 
 h2, .h2 {
-  font-size: 2.25rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 2.5rem; }
+  font-size: 2.25rem !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 2.5rem !important; }
   h2 .lg, .h2 .lg {
-    font-size: 2.375rem; }
+    font-size: 2.375rem !important; }
   @media screen and (max-width: 767px) {
     h2, .h2 {
       font-size: 2rem !important; } }
 
 h3, .h3 {
-  font-size: 1.875rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 2.5rem; }
+  font-size: 1.875rem !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 2.5rem !important; }
   h3.lg, .h3.lg {
-    font-size: 2rem; }
+    font-size: 2rem !important; }
 
 h4, .h4 {
-  font-size: 1.625rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  line-height: 1.2; }
+  font-size: 1.625rem !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important; }
   h4.lg, .h4.lg {
-    font-size: 1.75rem; }
+    font-size: 1.75rem !important; }
 
 h5, .h5 {
-  font-size: 1.375rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 1.2; }
+  font-size: 1.375rem !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  color: inherit !important; }
   h5.lg, .h5.lg {
-    font-size: 1.5rem; }
+    font-size: 1.5rem !important; }
 
 h6, .h6 {
-  font-size: 1.25rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 1.2; }
+  font-size: 1.25rem !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  color: inherit !important; }
 
 p, .p {
-  font-size: 1rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 1.2; }
+  font-size: 1rem !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important; }
   p.lg, .p.lg {
-    font-size: 1.125rem; }
+    font-size: 1.125rem !important; }
 
 .col-5ths {
   width: 20% !important;
   flex: none !important; }
+
+.hide {
+  display: none !important; }
 
 .card {
   border-radius: .4rem;
@@ -205,7 +212,7 @@ p, .p {
       padding: 0;
       font-weight: bold; }
     .card.main-review .stars {
-      background-image: url(images/stars.svg);
+      background-image: url(https://jotadonsanto.github.io/shatter-x/images/stars.svg);
       background-repeat: no-repeat;
       background-size: contain;
       height: 2.5rem;
@@ -239,9 +246,9 @@ p, .p {
     background-repeat: no-repeat;
     background-size: 2rem; }
   .table.table-striped tbody tr td.checked {
-    background-image: url(images/checked.svg); }
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/checked.svg); }
   .table.table-striped tbody tr td.failed {
-    background-image: url(images/failed.svg); }
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/failed.svg); }
 .table.table-striped > tbody > tr:nth-of-type(odd) {
   --bs-table-accent-bg: rgba(0, 0, 0, 0.02); }
 @media screen and (max-width: 767px) {
@@ -269,6 +276,8 @@ p, .p {
   border-bottom: 0.125rem solid #ddd;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
+  .accordion .accordion-item .accordion-header {
+    margin-bottom: 0 !important; }
   .accordion .accordion-item .accordion-button::after {
     background-color: #f3f3f3;
     border-radius: 50%;
@@ -311,7 +320,7 @@ p, .p {
       * .bb-red.single-review:first-child, * .bb-red.single-review:nth-child(3) {
         margin-right: 10%; }
       * .bb-red.single-review .data .stars {
-        background-image: url(images/stars.svg);
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/stars.svg);
         background-repeat: no-repeat;
         background-size: contain;
         width: 6rem;
@@ -354,53 +363,55 @@ p, .p {
     background-color: #D52027;
     color: white; }
 
-header .navbar .navbar-brand img {
-  max-width: 50vw; }
-header .navbar .navbar-toggler-icon {
-  background-image: url(images/menu.svg); }
-  header .navbar .navbar-toggler-icon.profile {
-    background-image: url(images/profile.jpg); }
+header {
+  position: relative !important; }
+  header .navbar .navbar-brand img {
+    max-width: 50vw; }
+  header .navbar .navbar-toggler-icon {
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/menu.svg); }
+    header .navbar .navbar-toggler-icon.profile {
+      background-image: url(https://jotadonsanto.github.io/shatter-x/images/profile.jpg); }
 
-main {
+main.main {
   position: relative;
   background-color: #181c1c; }
-  main::before {
+  main.main::before {
     position: absolute;
     content: '';
     top: 12%;
     left: 0;
     width: 100%;
     height: 74%;
-    background-image: url(images/background.png);
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
-  main h1 {
+  main.main h1 {
     position: relative;
     margin-top: 1.625rem; }
-    main h1:after {
+    main.main h1:after {
       position: absolute;
       content: '';
       top: -3.5rem;
       left: 0;
       width: 3rem;
       height: 3rem;
-      background-image: url(images/shield.svg);
+      background-image: url(https://jotadonsanto.github.io/shatter-x/images/shield.svg);
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain; }
       @media screen and (max-width: 768px) {
-        main h1:after {
+        main.main h1:after {
           left: calc(50% - 1.5rem); } }
-  main .card {
+  main.main .card {
     flex: 1;
     padding: 1rem 1.25rem; }
-    main .card p, main .card h6 {
+    main.main .card p, main.main .card h6 {
       margin-bottom: .25rem; }
-    main .card.border-white {
+    main.main .card.border-white {
       border: 1px solid #fff;
       background-color: #181c1c; }
-  main .year, main .nontoxic, main .nosticky, main .twice {
+  main.main .year, main.main .nontoxic, main.main .nosticky, main.main .twice {
     height: 100px;
     width: 100px;
     margin: 0 auto 1rem auto;
@@ -409,44 +420,44 @@ main {
     background-size: unset;
     background-color: #6A6A6A;
     border-radius: 50%; }
-    main .year p, main .nontoxic p, main .nosticky p, main .twice p {
+    main.main .year p, main.main .nontoxic p, main.main .nosticky p, main.main .twice p {
       margin-bottom: 1rem; }
-  main .year {
-    background-image: url(images/year_mobile.svg); }
-  main .nontoxic {
-    background-image: url(images/nontoxic_mobile.svg); }
-  main .nosticky {
-    background-image: url(images/sticky_mobile.svg); }
-  main .twice {
-    background-image: url(images/twice_mobile.svg); }
-  main .text-green {
+  main.main .year {
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/year_mobile.svg); }
+  main.main .nontoxic {
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/nontoxic_mobile.svg); }
+  main.main .nosticky {
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/sticky_mobile.svg); }
+  main.main .twice {
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/twice_mobile.svg); }
+  main.main .text-green {
     color: #2EC721; }
   @media screen and (min-width: 1201px) {
-    main {
-      background-image: url(images/background.jpg);
+    main.main {
+      background-image: url(https://jotadonsanto.github.io/shatter-x/images/background.jpg);
       background-position: 50vw 0;
       background-repeat: no-repeat;
       background-size: contain; }
-      main .row .col > span .card {
+      main.main .row .col > span .card {
         max-width: 48%; } }
   @media screen and (min-width: 769px) and (max-width: 1200px) {
-    main {
+    main.main {
       padding-top: calc(30vh + 5rem); }
-      main .row .col > span:first-child {
+      main.main .row .col > span:first-child {
         display: block; }
-      main .row .col > span .card {
+      main.main .row .col > span .card {
         max-width: 48%; }
-      main::before {
-        background-image: url(images/background.jpg);
+      main.main::before {
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/background.jpg);
         background-size: cover;
         top: 0;
         height: 30vh; } }
   @media screen and (max-width: 768px) {
-    main .row .col > span:first-child {
+    main.main .row .col > span:first-child {
       display: block;
       margin-bottom: 52vh; }
-    main::before {
-      background-image: url(images/background_mobile.png);
+    main.main::before {
+      background-image: url(https://jotadonsanto.github.io/shatter-x/images/background_mobile.png);
       top: 0;
       height: 105vh;
       bottom: 100%; } }
@@ -470,7 +481,7 @@ footer {
   footer a {
     display: block; }
   footer .payments {
-    background-image: url(images/payments.jpg);
+    background-image: url(https://jotadonsanto.github.io/shatter-x/images/payments.jpg);
     background-position: center;
     background-repeat: no-repeat;
     height: 3.125rem;
@@ -498,11 +509,11 @@ footer {
         background-position: center;
         background-repeat: no-repeat;
         color: #8a8a8a;
-        background-image: url(images/top-w.svg); }
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/top-w.svg); }
       footer #footer-accordion .accordion-item button:not(.collapsed) {
         background-color: transparent; }
         footer #footer-accordion .accordion-item button:not(.collapsed)::after {
-          background-image: url(images/top-w.svg); }
+          background-image: url(https://jotadonsanto.github.io/shatter-x/images/top-w.svg); }
 
 #wsywg {
   font-weight: 500; }
@@ -512,12 +523,19 @@ footer {
       width: 5.3125rem;
       margin: 0 auto; }
 
-#keepyou img {
+#keepyou .d-md-flex img {
   width: 4.0625rem;
   margin: 0 auto; }
 @media screen and (max-width: 768px) {
   #keepyou {
     background-color: #FFFFFF; } }
+#keepyou ul li {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+  font-size: 1.25rem; }
+  #keepyou ul li img {
+    margin-right: 1rem; }
 
 @media screen and (max-width: 768px) {
   #windshield .img-fluid {
@@ -573,21 +591,21 @@ footer {
     z-index: 9; }
 
 #stops .protected {
-  background-image: url(images/protected_1.jpg); }
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/protected_1.jpg); }
 #stops .unprotected {
-  background-image: url(images/unprotected_1.jpg); }
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/unprotected_1.jpg); }
 
 #enhances .protected {
-  background-image: url(images/protected_2.jpg); }
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/protected_2.jpg); }
 #enhances .unprotected {
-  background-image: url(images/unprotected_2.jpg); }
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/unprotected_2.jpg); }
 #enhances .uncoated {
-  background-image: url(images/uncoated.jpg); }
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/uncoated.jpg); }
   @media screen and (max-width: 768px) {
     #enhances .uncoated > div {
       text-align: left !important; } }
 #enhances .coated {
-  background-image: url(images/coated.jpg); }
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/coated.jpg); }
   @media screen and (max-width: 768px) {
     #enhances .coated > div {
       text-align: right !important; } }
@@ -627,12 +645,12 @@ footer {
       margin-top: 2.5rem;
       padding-right: 30%; } }
 #whatsin .whatsin {
-  background-image: url(images/whatsin.jpg);
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/whatsin.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain; }
 #whatsin .bb-red {
-  background-image: url(images/whatsin_mobile.jpg);
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/whatsin_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -649,9 +667,9 @@ footer {
   border-bottom-left-radius: .625rem; }
 
 .matbus {
-  background-image: url(images/matbus.jpg); }
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/matbus.jpg); }
 
 .airport {
-  background-image: url(images/hector_airport.jpg); }
+  background-image: url(https://jotadonsanto.github.io/shatter-x/images/hector_airport.jpg); }
 
 /*# sourceMappingURL=styles.css.map */
