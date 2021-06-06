@@ -22,7 +22,7 @@ section, .section, main.main {
   @media screen and (min-width: 1464px) {
     section, .section, main.main {
       padding: 5rem 17vw; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     section, .section, main.main {
       padding: 3.25rem 7vw;
       max-width: 100vw; }
@@ -35,7 +35,7 @@ section, .section, main.main {
     @media screen and (min-width: 1464px) {
       section.relaxed, .section.relaxed, main.main.relaxed {
         padding: 5rem 13vw; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       section.relaxed, .section.relaxed, main.main.relaxed {
         padding: 3.25rem 3vw; }
         section.relaxed .mobile-no-padded, .section.relaxed .mobile-no-padded, main.main.relaxed .mobile-no-padded {
@@ -47,7 +47,7 @@ section, .section, main.main {
     @media screen and (min-width: 1464px) {
       section.tight, .section.tight, main.main.tight {
         padding: 5rem 21vw; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       section.tight, .section.tight, main.main.tight {
         padding: 3.25rem 9vw; }
         section.tight .mobile-no-padded, .section.tight .mobile-no-padded, main.main.tight .mobile-no-padded {
@@ -69,7 +69,7 @@ section, .section, main.main {
         background-color: #F4F4F4; } }
   section.grey-section, .section.grey-section, main.main.grey-section {
     background-color: #F4F4F4; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       section.grey-section, .section.grey-section, main.main.grey-section {
         background: #FFF; } }
   section.black-section, .section.black-section, main.main.black-section {
@@ -83,6 +83,15 @@ section, .section, main.main {
   color: #FFFFFF !important; }
 .text-grey {
   color: #555555 !important; }
+@media screen and (min-width: 768px) {
+  .text-md-red {
+    color: #D52127 !important; }
+  .text-md-black {
+    color: #333333 !important; }
+  .text-md-white {
+    color: #FFFFFF !important; }
+  .text-md-grey {
+    color: #555555 !important; } }
 
 .bg-red {
   background-color: #D52127; }
@@ -281,15 +290,19 @@ p, .p {
   .accordion .accordion-item .accordion-button::after {
     background-color: #f3f3f3;
     border-radius: 50%;
-    padding: 1rem;
+    padding: 1.2rem;
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
     color: #8a8a8a; }
   .accordion .accordion-item .accordion-button:not(.collapsed) {
-    background-color: #fff; }
+    background-color: #fff;
+    color: #D52027; }
     .accordion .accordion-item .accordion-button:not(.collapsed)::after {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+  .accordion .accordion-item .accordion-button:focus {
+    border-color: rgba(213, 32, 39, 0.7);
+    box-shadow: 0 0 0 0.25rem rgba(213, 32, 39, 0.7); }
 
 * {
   position: relative; }
@@ -307,7 +320,7 @@ p, .p {
       height: .3rem;
       background-color: #D52127;
       border-radius: 0 0 0.625rem 0.625rem; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         * .bb-red::after {
           height: .625rem; } }
     * .bb-red.xl::after {
@@ -346,7 +359,7 @@ p, .p {
       background-color: #333333; }
     .btn-black > img {
       margin-right: 1rem; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .btn-black {
         display: flex;
         justify-content: center;
@@ -365,6 +378,18 @@ p, .p {
 
 header {
   position: relative !important; }
+  header .d-none span {
+    border-radius: 2rem;
+    background: #EE3238;
+    padding: .33rem 1rem;
+    line-height: 1 !important; }
+  header .d-none a:hover {
+    color: white !important;
+    text-decoration: underline; }
+  header .d-none .section .p.ms-3:first-child {
+    margin: 0 !important; }
+  header .d-none img {
+    max-width: 17vw; }
   header .navbar .navbar-brand img {
     max-width: 50vw; }
   header .navbar .navbar-toggler-icon {
@@ -400,7 +425,7 @@ main.main {
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         main.main h1:after {
           left: calc(50% - 1.5rem); } }
   main.main .card {
@@ -440,9 +465,9 @@ main.main {
       background-size: contain; }
       main.main .row .col > span .card {
         max-width: 48%; } }
-  @media screen and (min-width: 769px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     main.main {
-      padding-top: calc(30vh + 5rem); }
+      padding-top: calc(45vh + 5rem); }
       main.main .row .col > span:first-child {
         display: block; }
       main.main .row .col > span .card {
@@ -451,8 +476,18 @@ main.main {
         background-image: url(https://jotadonsanto.github.io/shatter-x/images/background.jpg);
         background-size: cover;
         top: 0;
-        height: 30vh; } }
-  @media screen and (max-width: 768px) {
+        height: 30vh; }
+      main.main::after {
+        position: absolute;
+        content: '';
+        background-image: url(https://jotadonsanto.github.io/shatter-x/images/background_tablet.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: calc(30vh - 20%);
+        left: 12vw;
+        height: 40%;
+        width: 50%; } }
+  @media screen and (max-width: 767px) {
     main.main .row .col > span:first-child {
       display: block;
       margin-bottom: 52vh; }
@@ -516,7 +551,8 @@ footer {
           background-image: url(https://jotadonsanto.github.io/shatter-x/images/top-w.svg); }
 
 #wsywg {
-  font-weight: 500; }
+  font-weight: 500;
+  background: #F4F4F4; }
   #wsywg .card {
     height: 100%; }
     #wsywg .card img {
@@ -526,18 +562,21 @@ footer {
 #keepyou .d-md-flex img {
   width: 4.0625rem;
   margin: 0 auto; }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #keepyou {
     background-color: #FFFFFF; } }
-#keepyou ul li {
-  width: 50%;
-  float: left;
-  list-style-type: none;
-  font-size: 1.25rem; }
-  #keepyou ul li img {
-    margin-right: 1rem; }
+#keepyou ul {
+  max-width: 400px;
+  margin: 0 auto; }
+  #keepyou ul li {
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    font-size: 1.25rem; }
+    #keepyou ul li img {
+      margin-right: 1rem; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #windshield .img-fluid {
     max-height: 20vh; } }
 #windshield h5.lg {
@@ -566,7 +605,7 @@ footer {
     font-size: 1.875rem;
     border: none;
     padding: 2rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     #stops .unprotected, #stops .protected, #enhances .unprotected, #enhances .protected {
       height: 25vh; }
       #stops .unprotected label, #stops .protected label, #enhances .unprotected label, #enhances .protected label {
@@ -601,12 +640,12 @@ footer {
   background-image: url(https://jotadonsanto.github.io/shatter-x/images/unprotected_2.jpg); }
 #enhances .uncoated {
   background-image: url(https://jotadonsanto.github.io/shatter-x/images/uncoated.jpg); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     #enhances .uncoated > div {
       text-align: left !important; } }
 #enhances .coated {
   background-image: url(https://jotadonsanto.github.io/shatter-x/images/coated.jpg); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     #enhances .coated > div {
       text-align: right !important; } }
 #enhances .coated, #enhances .uncoated {
@@ -615,7 +654,7 @@ footer {
   background-repeat: no-repeat;
   color: #555555;
   margin-bottom: 3.75rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     #enhances .coated, #enhances .uncoated {
       height: 15rem !important; } }
   #enhances .coated > div, #enhances .uncoated > div {
@@ -624,7 +663,7 @@ footer {
     bottom: -3.75rem;
     left: 25%;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25); }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       #enhances .coated > div, #enhances .uncoated > div {
         width: calc(100% - 14vw);
         left: 7vw;
@@ -636,7 +675,7 @@ footer {
   width: 3rem;
   margin-right: 2rem; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #whatsin {
     padding-top: 0;
     padding-bottom: 0; }
